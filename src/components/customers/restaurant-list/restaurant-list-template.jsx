@@ -14,7 +14,8 @@ import * as dataRestaurants from "../../restaurants/restaurant-data.jsx";
 
 //importing columns for restaurant list restaurantListTemplate
 import * as tableData from "./restaurant-list-data.jsx"
-
+//to send customer id to view order  template
+import * as sendCustomerId from "./view-orders/view-orders-template.jsx";
 //variable to store customer id
 var customerid="";
 
@@ -22,8 +23,7 @@ var customerid="";
 function getID(id){
   customerid=id;
 }
-//to send customer id to view order  template
-import * as sendCustomerId from "./view-orders/view-orders-template.jsx";
+
 
 function restaurantListTemplate(){
   //sending customer id to view-order-tempalte(next page)

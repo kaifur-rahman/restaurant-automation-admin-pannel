@@ -12,6 +12,9 @@ import FullScreen from "../full-screen-template.jsx";
 import * as data from "../../customers/customers-data.jsx";
 import * as dataRestaurants from "../restaurant-data.jsx";
 
+//to send restaurant id to view order list template
+import * as sendRestaurantId from "./order-list/order-list-template.jsx";
+
 //variable to store restaurant id
 var restid="";
 
@@ -20,8 +23,6 @@ function getID(id){
   restid=id;
 }
 
-//to send restaurant id to view order list template
-import * as sendRestaurantId from "./order-list/order-list-template.jsx";
 
 function customerListTemplate(){
   //sending restaurant id to order-list-tempalte

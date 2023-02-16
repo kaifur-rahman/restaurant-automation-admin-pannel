@@ -15,6 +15,11 @@ import * as dataRestaurants from "../../restaurants/restaurant-data.jsx";
 
 //importing columns for restaurant list restaurantListTemplate
 import * as tableData from "./restaurant-list-data.jsx"
+//to send vendor id to view purchase list template
+import * as sendVendorIdPL from "./purchase-list/purchase-list-template.jsx";
+
+//to send vendor id to view purchase return template
+import * as sendVendorIdPR from "./purchase-return/purchase-return-template.jsx";
 
 //variable to store vendor id
 var vendorid="";
@@ -23,11 +28,7 @@ var vendorid="";
 function getID(id){
   vendorid=id;
 }
-//to send vendor id to view purchase list template
-import * as sendVendorIdPL from "./purchase-list/purchase-list-template.jsx";
 
-//to send vendor id to view purchase return template
-import * as sendVendorIdPR from "./purchase-return/purchase-return-template.jsx";
 
 function restaurantListTemplate(){
   //sending vendor id to purchase-list-tempalte(next page)
