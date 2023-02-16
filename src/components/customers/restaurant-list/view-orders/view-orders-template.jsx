@@ -8,17 +8,17 @@ import RestaurantDetails from "../../../restaurants/customer-list/restaurant-det
 import Table from "../../../restaurants/table-template.jsx";
 import TaskBar from "../../../restaurants/taskbar-above-table.jsx";
 import FullScreen from "../../../restaurants/full-screen-template.jsx";
+//importing data to be displayed
+import * as dataCustomer from "../../customers-data.jsx";
+import * as dataRestaurants from "../../../restaurants/restaurant-data.jsx";
+//importing columns for restaurant list restaurantListTemplate
+import * as tableData from "./view-orders-data.jsx"
 
 //variable to store customer id
 var customerid="";
 //variable to store restaurant id
 var restaurantid="";
 
-//importing data to be displayed
-import * as dataCustomer from "../../customers-data.jsx";
-import * as dataRestaurants from "../../../restaurants/restaurant-data.jsx";
-//importing columns for restaurant list restaurantListTemplate
-import * as tableData from "./view-orders-data.jsx"
 
 //function to collect restaurant id from action button template
 function getID(id){
