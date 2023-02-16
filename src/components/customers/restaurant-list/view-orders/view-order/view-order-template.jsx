@@ -10,6 +10,13 @@ import OrderDetails from "../../../../restaurants/customer-list/order-list/view-
 import Table from "../../../../restaurants/table-template.jsx";
 import TaskBar from "../../../../restaurants/taskbar-above-table.jsx";
 import FullScreen from "../../../../restaurants/full-screen-template.jsx";
+//importing data to be displayed
+import * as dataCustomer from "../../../customers-data.jsx";
+import * as dataRestaurants from "../../../../restaurants/restaurant-data.jsx";
+import * as dataViewOrder from "../../../../restaurants/customer-list/order-list/view-order/view-order-data.jsx";
+import * as dataViewOrders from "../../../../restaurants/customer-list/order-list/order-data.jsx";
+//importing order data from restaurant menu folder only
+import * as dataOrders from "../../../../restaurants/customer-list/order-list/view-order/view-order-data.jsx";
 
 //variable to store customer id
 var customerid="";
@@ -18,13 +25,7 @@ var restaurantid="";
 //variable to store restaurant id
 var orderid="";
 
-//importing data to be displayed
-import * as dataCustomer from "../../../customers-data.jsx";
-import * as dataRestaurants from "../../../../restaurants/restaurant-data.jsx";
-import * as dataViewOrder from "../../../../restaurants/customer-list/order-list/view-order/view-order-data.jsx";
-import * as dataViewOrders from "../../../../restaurants/customer-list/order-list/order-data.jsx";
-//importing order data from restaurant menu folder only
-import * as dataOrders from "../../../../restaurants/customer-list/order-list/view-order/view-order-data.jsx";
+
 //function to collect order id from action button template
 function getID(id){
   orderid=id;
